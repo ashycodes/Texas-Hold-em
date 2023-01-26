@@ -29,11 +29,15 @@ class gameManager {
 
 
 
+const player1 = new player(1, "Ashy", 1000);
+const getCard = deck.dealCard;
+player1.hand.push(getCard)
+player1.hand.push(getCard)
+player1.hand.push(getCard)
 
-
-console.log(deck.dealCard);
-console.log(deck.dealCard);
+console.log(player1.hand);
 console.log(deck);
+
 
 
 

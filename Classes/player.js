@@ -6,11 +6,7 @@ export class player {
       this.name = name;
       this.chips = 0;
       this.hand = [];
-    }
-    
-    get playersHand() {
-        this.hand; 
-    }
+    };
 
 
     buyIn() {
