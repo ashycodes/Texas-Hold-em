@@ -1,3 +1,23 @@
+body {
+    background-color: darkgreen;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.game-setup {
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
