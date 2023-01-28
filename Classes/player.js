@@ -4,7 +4,7 @@ export class player {
     constructor(id, name, chips, hand){
       this.id = id;
       this.name = name;
-      this.chips = 0;
+      this.chips = chips;
       this.hand = [];
     };
 
@@ -30,7 +30,14 @@ export class player {
   
     };
     
-  
-  };
+    get playerPreviewHtml(){
+      return `
+        <div class="player d-flex justify-content-between">
+          <div class="player-name">${this.name}</div>
+          <div class="player-balance">${this.chips}</div>
+        </div>
+      `;
+    }
+};
 
 

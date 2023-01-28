@@ -1,5 +1,6 @@
 body {
-    background-color: darkgreen;
+    background-color: darkgreen !important;
+    color: white !important;
 }
 
 
@@ -8,12 +9,31 @@ h1 {
     justify-content: center;
 }
 
+.btn-round {
+    border-radius: 50% !important;
+}
 
-.game-setup {
+
+.player-select .input-group {
+    justify-content: space-between;
+}
+
+
+#player-count {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.game-screen {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-
-
+    min-height: 150px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 5px;
 }
 
 
