@@ -10,4 +10,10 @@ export class gameScreen {
     show(){
         $(this.divId).removeClass("visually-hidden");
     }
+
+    render(target, html){
+        console.log(target);
+        console.log(html);
+        $(target).html(html);
+    }
 }

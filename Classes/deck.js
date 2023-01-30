@@ -9,7 +9,7 @@ export class card {
 
     get getHtml() {
       return `
-        <div class="card ${this.suit}" id="${this.rank}">
+        <div class="playing-card ${this.suit}" id="${this.rank}">
           <div class="upper-corner">${this.rank}</div>
           <div class="center"></div>
           <div class="lower-corner">${this.rank}</div>

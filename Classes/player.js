@@ -32,9 +32,15 @@ export class player {
     
     get playerPreviewHtml(){
       return `
-        <div class="player d-flex justify-content-between">
-          <div class="player-name">${this.name}</div>
-          <div class="player-balance">${this.chips}</div>
+        <div class="player-row card bg-secondary mb-3 p-3">
+          <div class="player-summary d-flex justify-content-between mb-3">
+            <div class="player-name">${this.name}</div>
+            <div class="player-balance">$${this.chips}</div>
+          </div>
+
+          <div class="active-turn">
+            <button class="btn btn-primary form-control take-action" data-pid="${this.id}">Take Action</button>
+          </div>
         </div>
       `;
     }
