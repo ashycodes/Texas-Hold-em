@@ -13,6 +13,11 @@ h1 {
     border-radius: 50% !important;
 }
 
+#resetGame {
+    position: absolute;
+    bottom: 15;
+}
+
 
 .player-select .input-group {
     justify-content: space-between;
@@ -67,6 +72,7 @@ h1 {
 
 .playing-card .center {
     width: 70px;
+    max-height: 50px;
 }
 
 .playing-card.hearts .center {
@@ -87,4 +93,13 @@ h1 {
 
 .playing-card.clubs .center {
     content: url("https://cdn-icons-png.flaticon.com/512/220/220757.png");
+}
+
+
+#gameBoard .player-row .active-turn { 
+    display: none;
+}
+
+#gameBoard .player-row .active-turn .active { 
+    display: none;
 }

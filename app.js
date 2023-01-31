@@ -2,5 +2,5 @@
 import { gameManager } from "./Classes/gameManager.js";
 
 const manager = new gameManager(); 
-manager.setupGame();
+manager.initiate();
 

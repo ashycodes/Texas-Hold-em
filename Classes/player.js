@@ -1,7 +1,7 @@
 //choose how many players at least 2 
 // player class, handles hands 
 export class player {
-    constructor(id, name, chips, hand){
+    constructor(id, name, chips){
       this.id = id;
       this.name = name;
       this.chips = chips;
@@ -30,6 +30,10 @@ export class player {
   
     };
     
+    static from(JSON){
+      return Object.assign(new player(), JSON);
+    }
+
     get playerPreviewHtml(){
       return `
         <div class="player-row card bg-secondary mb-3 p-3">

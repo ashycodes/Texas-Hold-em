@@ -15,10 +15,11 @@ export class gameBoard extends gameScreen{
     }
     
     render = (sharedHand, players) => {
+      console.log(players)
       var $cardcontainer = $(".shared-hand");
       sharedHand.forEach(card => {
         $cardcontainer.append(card.getHtml);
-      })
+      });
 
       players.forEach(player => {
         $(".player-preview").append(player.playerPreviewHtml);
